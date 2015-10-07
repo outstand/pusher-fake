@@ -15,8 +15,6 @@ PusherFake.configure do |configuration|
   configuration.app_id = Pusher.app_id
   configuration.key    = Pusher.key
   configuration.secret = Pusher.secret
-  configuration.web_port = PUSHERFAKE_WEB_PORT if defined?(PUSHERFAKE_WEB_PORT)
-  configuration.socket_port = PUSHERFAKE_SOCKET_PORT if defined?(PUSHERFAKE_SOCKET_PORT)
 end
 
 # Set the host and port to the fake web server.
